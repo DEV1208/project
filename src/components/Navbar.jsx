@@ -7,9 +7,9 @@ export default function Navbar({ isDark, setIsDark }) {
 
   const navLinks = [
     { path: '/', label: 'Home' },
-    { path: '/channels', label: 'Channels' },
-    { path: '/challenges', label: 'Challenges' },
-    { path: '/best-practices', label: 'Best Practices' }
+    { path: '/CRM', label: 'CRM' },
+    { path: '/VideoCalls', label: 'Video Calls' },
+    { path: '/Emails', label: 'Emails' }
   ];
 
   return (
