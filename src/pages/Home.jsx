@@ -25,18 +25,9 @@ export default function Home() {
               Mastering digital communication in the modern workplace. Explore professional strategies for virtual meetings, customer relationship management, and effective corporate correspondence.
             </p>
 
-            <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed mb-8">
+            <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
               Select a module below to review detailed strategies, etiquette guidelines, and best practices for remote collaboration.
             </p>
-            
-            <div className="flex flex-wrap gap-3">
-              <button 
-                onClick={() => navigate('/video-calls')} 
-                className="px-5 py-2.5 bg-blue-600 hover:bg-blue-700 dark:bg-cyan-500 dark:hover:bg-cyan-400 text-white dark:text-slate-950 font-semibold rounded-lg shadow-sm transition-all flex items-center gap-2 text-sm cursor-pointer"
-              >
-                Explore Video Calls <ArrowRight size={16} />
-              </button>
-            </div>
           </div>
 
           {/* Right Hero Empty Container */}
@@ -48,62 +39,74 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 3-Column Navigation Grid (Header on top, Empty Box in middle, Text below) */}
+      {/* 3-Column Navigation Grid */}
       <section className="mb-20">
         <div className="grid md:grid-cols-3 gap-8">
           
           {/* Column 1: Video Calls */}
-          <div 
-            className="flex flex-col cursor-pointer group" 
-            onClick={() => navigate('/video-calls')}
-          >
-            <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-3 group-hover:text-blue-600 dark:group-hover:text-cyan-400 transition-colors">
+          <div className="flex flex-col">
+            <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-3">
               Video Calls
             </h3>
             
-            <GlassCard hover className="w-full h-44 mb-4 border-2 border-slate-300 dark:border-slate-700">
+            <GlassCard className="w-full h-44 mb-4 border-2 border-slate-300 dark:border-slate-700">
               {/* Empty container */}
             </GlassCard>
             
-            <p className="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+            <p className="text-sm text-slate-600 dark:text-slate-300 leading-relaxed mb-6">
               Essential strategies for navigating virtual meetings across modern workplaces, managing agendas, and maintaining active professional engagement.
             </p>
+
+            <button 
+              onClick={() => navigate('/video-calls')} 
+              className="mt-auto self-start px-5 py-2.5 bg-blue-600 hover:bg-blue-700 dark:bg-cyan-500 dark:hover:bg-cyan-400 text-white dark:text-slate-950 font-semibold rounded-lg shadow-sm transition-all flex items-center gap-2 text-sm cursor-pointer"
+            >
+              Explore Video Calls <ArrowRight size={16} />
+            </button>
           </div>
 
           {/* Column 2: CRM */}
-          <div 
-            className="flex flex-col cursor-pointer group" 
-            onClick={() => navigate('/crm')}
-          >
-            <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-3 group-hover:text-blue-600 dark:group-hover:text-cyan-400 transition-colors">
+          <div className="flex flex-col">
+            <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-3">
               Customer Relations (CRM)
             </h3>
             
-            <GlassCard hover className="w-full h-44 mb-4 border-2 border-slate-300 dark:border-slate-700">
+            <GlassCard className="w-full h-44 mb-4 border-2 border-slate-300 dark:border-slate-700">
               {/* Empty container */}
             </GlassCard>
             
-            <p className="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+            <p className="text-sm text-slate-600 dark:text-slate-300 leading-relaxed mb-6">
               Focuses on IT Service Management (ITSM) and customer experience, covering live phone interactions and transparent incident notification workflows.
             </p>
+
+            <button 
+              onClick={() => navigate('/crm')} 
+              className="mt-auto self-start px-5 py-2.5 bg-blue-600 hover:bg-blue-700 dark:bg-cyan-500 dark:hover:bg-cyan-400 text-white dark:text-slate-950 font-semibold rounded-lg shadow-sm transition-all flex items-center gap-2 text-sm cursor-pointer"
+            >
+              Explore CRM <ArrowRight size={16} />
+            </button>
           </div>
 
           {/* Column 3: Emails */}
-          <div 
-            className="flex flex-col cursor-pointer group" 
-            onClick={() => navigate('/emails')}
-          >
-            <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-3 group-hover:text-blue-600 dark:group-hover:text-cyan-400 transition-colors">
+          <div className="flex flex-col">
+            <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-3">
               Emails
             </h3>
             
-            <GlassCard hover className="w-full h-44 mb-4 border-2 border-slate-300 dark:border-slate-700">
+            <GlassCard className="w-full h-44 mb-4 border-2 border-slate-300 dark:border-slate-700">
               {/* Empty container */}
             </GlassCard>
             
-            <p className="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+            <p className="text-sm text-slate-600 dark:text-slate-300 leading-relaxed mb-6">
               Analyzes how to write corporate correspondence efficiently and effectively, avoiding common pitfalls and maximizing reader clarity.
             </p>
+
+            <button 
+              onClick={() => navigate('/emails')} 
+              className="mt-auto self-start px-5 py-2.5 bg-blue-600 hover:bg-blue-700 dark:bg-cyan-500 dark:hover:bg-cyan-400 text-white dark:text-slate-950 font-semibold rounded-lg shadow-sm transition-all flex items-center gap-2 text-sm cursor-pointer"
+            >
+              Explore Emails <ArrowRight size={16} />
+            </button>
           </div>
 
         </div>
